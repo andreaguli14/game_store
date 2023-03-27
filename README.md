@@ -17,3 +17,5 @@ Palette
 
 * card category background 1C2D3B
 
+gian marco
+
