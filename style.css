@@ -317,15 +317,15 @@ color: red;
 
 
 .maincard {
-  width: 75vh;
-  height: 350px;
+  width: 100%;
+  height: 82%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding: 0 36px;
+  padding: 0 ;
   perspective: 1600px;
-  margin: 0 50px;
+  margin-top: 10%
   
 }
 
@@ -344,23 +344,23 @@ color: red;
 }
 
 .maincard:hover .wrapper {
-  transform: perspective(600px) translateY(-5%) rotateX(5deg) translateZ(5deg);
+  transform: perspective(600px) translateY(0%) rotateX(5deg) translateZ(5deg);
   box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
 }
 
-.wrapper::before,
-.wrapper::after {
+.content .wrapper::before,
+.content .wrapper::after {
   content: "";
   opacity: 0;
   width: 100%;
-  height: 80px;
+  height: 70%;
   transition: all 0.5s;
   position: absolute;
   left: 0;
 }
-.wrapper::before {
+.content .wrapper::before {
   top: 0;
   height: 100%;
   background-image: linear-gradient(
@@ -381,8 +381,8 @@ color: red;
   );
 }
 
-.maincard:hover .wrapper::before,
-.wrapper::after {
+.maincard:hover .content .wrapper::before,
+.content .wrapper::after {
   opacity: 1;
 }
 
@@ -394,7 +394,7 @@ color: red;
   transition: transform 0.5s;
 }
 .maincard:hover .title {
-  transform: translate3d(0%, -50px, 100px);
+  transform: translate3d(0%, -100px, 100px);
 }
 
 .character {
@@ -409,4 +409,6 @@ color: red;
   opacity: 1;
   transform: translate3d(0%, -30%, 100px);
 }
+
+
 
