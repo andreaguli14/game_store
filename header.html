@@ -17,6 +17,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
+        body {
+            background-color: #06111a;
+        }
+
         #lente span {
             color: #fff;
             font-size: 1.8em;
@@ -29,6 +33,16 @@
         #popular {
             background-color: #ff4367;
             color: #fff;
+        }
+
+        .minimg,
+        .btnminimg {
+            background-color: #0d1a28;
+            color: #fff;
+        }
+
+        .btnminimg {
+            background-color: #162838;
         }
     </style>
 </head>
@@ -62,27 +76,61 @@
         </div>
     </nav>
 
-    <div class="d-flex mt-3 ms-3">
-        <div class="container w-auto h-50">
-            <div class="card text-bg-dark">
-                <img src="./assets/img/Sfondo.jpg" class="card-img" alt="Game Image">
-                <div class="card-img-overlay">
-                    <button id="popular" type="button" class="btn rounded-pill">Popular</button>
-                    <button type="button" class="btn btn-dark rounded-circle"><i class="fa-solid fa-gamepad-modern"
-                            style="color: #ffffff;"></i></button>
-                    <button type="button" class="btn btn-dark rounded-circle"><i
-                            class="fa-brands fa-windows"></i></button>
-                    <button type="button" class="btn btn-dark rounded-circle"><i
-                            class="fa-brands fa-apple"></i></button>
+    <!-- GRID PRINCIPALE -->
+
+    <div class="container m-5">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="card text-bg-dark rounded-5">
+                    <img src="./assets/img/Sfondo.jpg" class="card-img" alt="Game Image">
+                    <div class="card-img-overlay">
+                        <button id="popular" type="button" class="btn rounded-pill">Popular</button>
+                        <button type="button" class="btn btn-dark rounded-circle"><i class="fa-solid fa-gamepad-modern"
+                                style="color: #ffffff;"></i></button>
+                        <button type="button" class="btn btn-dark rounded-circle"><i
+                                class="fa-brands fa-windows"></i></button>
+                        <button type="button" class="btn btn-dark rounded-circle"><i
+                                class="fa-brands fa-apple"></i></button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="card text-end" style="width: 18rem;">
-                <div class="card-body w-auto">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">80.99€</a>
+            <div class="col-sm-4">
+                <!-- GRID SECONDARIO -->
+                <div class="container">
+                    <div class="row my-5">
+                        <div class="row-cols-auto">
+                            <div class="card text-end minimg rounded-4" style="width: 26rem;">
+                                <div class="card-body text-start">
+                                    <h5 class="card-title text-start mb-3">Hogwarts Legacy</h5>
+                                    <button type="button"
+                                        class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Action-Adventure</button>
+                                    <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill ms-2">Hack
+                                        and slash</button>
+                                    <br>
+                                    <button type="button"
+                                        class="btnminimg btn btn-dark btn-sm rounded-pill">Playstation</button>
+                                    <button type="button"
+                                        class="btnminimg btn btn-dark btn-sm rounded-pill m-3">Windows</button>
+                                    <button type="button"
+                                        class="btnminimg btn btn-dark btn-sm rounded-pill">MacOS</button>
+                                    <br>
+                                    <a href="#" class="btn btn-primary float-end mt-3 btn-lg">€ 80.99</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 mt-4">
+                            <div class="card me-5" style="width: 12rem;">
+                                <img src="./assets/img/Fotogramma.jpg" class="card-img-top" alt="Fotogramma">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mt-4">
+                            <div class="card ms-5" style="width: 12rem;">
+                                <img src="./assets/img/fotogramma2.png" class="card-img-top" alt="Fotogramma2">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
