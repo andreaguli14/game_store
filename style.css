@@ -277,6 +277,8 @@
 
 #clear-btn{
 text-decoration: none;
+position: static;
+top: 0;
 }
 #clear-btn:hover{
 text-decoration: none;
