@@ -26,10 +26,6 @@
             font-size: 1.8em;
         }
 
-        #i {
-            display: none;
-        }
-
         #popular {
             background-color: #ff4367;
             color: #fff;
@@ -44,13 +40,17 @@
         .btnminimg {
             background-color: #162838;
         }
+
+        #accumulo {
+            background-color: #0c2038;
+        }
     </style>
 </head>
 
 <body>
 
     <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-        <div class="container-fluid">
+        <div class="container-sm">
             <a class="navbar-brand" href="#">
                 <img src="./assets/img/logo.png" alt="Logo" width="200" height="50">
             </a>
@@ -78,7 +78,7 @@
 
     <!-- GRID PRINCIPALE -->
 
-    <div class="container m-5">
+    <div class="container-sm m-5">
         <div class="row">
             <div class="col-sm-8">
                 <div class="card text-bg-dark rounded-5">
@@ -96,8 +96,8 @@
             </div>
             <div class="col-sm-4">
                 <!-- GRID SECONDARIO -->
-                <div class="container">
-                    <div class="row my-5">
+                <div class="container-sm">
+                    <div class="row">
                         <div class="row-cols-auto">
                             <div class="card text-end minimg rounded-4" style="width: 26rem;">
                                 <div class="card-body text-start">
@@ -119,15 +119,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-6 mt-4">
+                    <div class="row mt-5">
+                        <div class="col-sm-6">
                             <div class="card me-5" style="width: 12rem;">
-                                <img src="./assets/img/Fotogramma.jpg" class="card-img-top" alt="Fotogramma">
+                                <img src="./assets/img/Fotogramma.jpg" class="card-img-top" alt="Fotogramma" width="240"
+                                    height="130">
                             </div>
                         </div>
-                        <div class="col-sm-6 mt-4">
-                            <div class="card ms-5" style="width: 12rem;">
-                                <img src="./assets/img/fotogramma2.png" class="card-img-top" alt="Fotogramma2">
+                        <div class="col-sm-6">
+                            <div class="card ms-5 accumulo z-1" style="width: 12rem;">
+                                <img src="./assets/img/fotogramma2.png" class="card-img-top z-0" alt="Fotogramma2"
+                                    width="240" height="130">
                             </div>
                         </div>
                     </div>
