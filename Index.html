@@ -18,22 +18,24 @@
 
 <body style="background-color: #0B171F">
 
-
-  <nav class="navbar fixed-top" style="padding: 0; ">
+  <nav class="navbar fixed-top " style="padding: 0; ">
     <div class="container-fluid">
-      <a class="navbar-brand " href="#">
-        <img src="./assets/img/logo.png" width="350px" height="100px" class="marginlogo mt-3">
-      </a>
-      <form class="searchform" action="">
-        <input type="search" required>
-        <a href="javascript:void(0)" id="clear-btn">X</a>
-        <i class="fa fa-search"></i>
-      </form>
+      <div class="text-center">
+        <a class="navbar-brand pb-4" href="#">
+          <img src="./assets/img/logo.png" width="80%" height="50%" class="marginlogo mt-3">
+        </a>
+      </div>
+        <div class="pb-2 offset-5" style="height: 20%;">
+        <form class="searchform" action="" onmouseleave="clearInput()">
+          <input type="search" required>
+          <i class="fa fa-search"></i>
+        </form>
+      </div>
     </div>
   </nav>
 
   <div class="wrapper">
-    <div class="sidebar d-flex flex-column justify-content-between" style="height: 75%;">
+    <div class="sidebar pt-2 d-flex flex-column justify-content-between" style="height: 75%;">
       <ul class="d-flex flex-column"">
         <li>
           <a class=" homehover" href="#">
@@ -128,208 +130,220 @@
         </div>
       </div>
     </div>
-    <div class="row pt-5">
+    <div class="row pt-5 mb-4">
       <h1>Giochi in Evidenza</h1>
     </div>
-    <div class="row pt-5">
 
-      <div class="card mx-3" style="width: 30%; background-color: #1D2C3B; border-radius: 50px;">
-        <img src="./assets/img/spiderman.jpg" class="mx-3 mt-3" alt="..." style="border-radius: 50px;">
-        <div class="card-body">
-          <h3 class="card-title">Amazing Spiderman</h3>
-          <div class="pb-2" >
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
-          </div>
-          <div class="text-center mt-3">
-            <button href="#" class="btn btn-primary px-5 py-3 " style="border-radius: 30px;">Cart 50,59€</button>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-3" style=" background-color: #1D2C3B; border-radius: 50px;">
+          <img src="./assets/img/spiderman.jpg" class="mx-3 mt-3" alt="..." style="border-radius: 50px;">
+          <div class="card-body">
+            <h3 class="card-title">Amazing Spiderman</h3>
+            <div class="pb-2">
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
+            </div>
+            <div class="text-center mt-3">
+              <button href="#" class="btn btn-primary px-5 py-3 " style="border-radius: 30px;">Cart 50,59€</button>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="card mx-3"" style="width: 30%; background-color: #1D2C3B; border-radius: 50px;">
-        <img src="./assets/img/spiderman.jpg" class="mx-3 mt-3" alt="..." style="border-radius: 50px;">
-        <div class="card-body">
-          <h3 class="card-title">Amazing Spiderman</h3>
-          <div class="pb-2" >
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
-          </div>
-          <div class="text-center mt-3">
-            <button href="#" class="btn btn-primary px-5 py-3 " style="border-radius: 30px;">Cart 50,59€</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="card mx-3"" style="width: 30%; background-color: #1D2C3B; border-radius: 50px;">
-        <img src="./assets/img/spiderman.jpg" class="mx-3 mt-3" alt="..." style="border-radius: 50px;">
-        <div class="card-body">
-          <h3 class="card-title">Amazing Spiderman</h3>
-          <div class="pb-2" >
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
-          </div>
-          <div class="text-center mt-3">
-            <button href="#" class="btn btn-primary px-5 py-3 " style="border-radius: 30px;">Cart 50,59€</button>
+      <div class="col-md-4 mb-3">
+        <div class="card" style=" background-color: #1D2C3B; border-radius: 50px;">
+          <img src="./assets/img/spiderman.jpg" class="mx-3 mt-3" alt="..." style="border-radius: 50px;">
+          <div class="card-body">
+            <h3 class="card-title">Amazing Spiderman</h3>
+            <div class="pb-2">
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
+            </div>
+            <div class="text-center mt-3">
+              <button href="#" class="btn btn-primary px-5 py-3 " style="border-radius: 30px;">Cart 50,59€</button>
+            </div>
           </div>
         </div>
       </div>
-
-
+      <div class="col-md-4 mb-3">
+        <div class="card" style=" background-color: #1D2C3B; border-radius: 50px;">
+          <img src="./assets/img/spiderman.jpg" class="mx-3 mt-3" alt="..." style="border-radius: 50px;">
+          <div class="card-body">
+            <h3 class="card-title">Amazing Spiderman</h3>
+            <div class="pb-2">
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
+            </div>
+            <div class="text-center mt-3">
+              <button href="#" class="btn btn-primary px-5 py-3 " style="border-radius: 30px;">Cart 50,59€</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="row pt-5">
-
-      <div class="card mx-3" style="width: 30%; background-color: #1D2C3B; border-radius: 50px;">
-        <img src="./assets/img/spiderman.jpg" class="mx-3 mt-3" alt="..." style="border-radius: 50px;">
-        <div class="card-body">
-          <h3 class="card-title">Amazing Spiderman</h3>
-          <div class="pb-2" >
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
-          </div>
-          <div class="text-center mt-3">
-            <button href="#" class="btn btn-primary px-5 py-3 " style="border-radius: 30px;">Cart 50,59€</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="card mx-3"" style="width: 30%; background-color: #1D2C3B; border-radius: 50px;">
-        <img src="./assets/img/spiderman.jpg" class="mx-3 mt-3" alt="..." style="border-radius: 50px;">
-        <div class="card-body">
-          <h3 class="card-title">Amazing Spiderman</h3>
-          <div class="pb-2" >
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
-          </div>
-          <div class="text-center mt-3">
-            <button href="#" class="btn btn-primary px-5 py-3 " style="border-radius: 30px;">Cart 50,59€</button>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-3" style=" background-color: #1D2C3B; border-radius: 50px;">
+          <img src="./assets/img/spiderman.jpg" class="mx-3 mt-3" alt="..." style="border-radius: 50px;">
+          <div class="card-body">
+            <h3 class="card-title">Amazing Spiderman</h3>
+            <div class="pb-2">
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
+            </div>
+            <div class="text-center mt-3">
+              <button href="#" class="btn btn-primary px-5 py-3 " style="border-radius: 30px;">Cart 50,59€</button>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="card mx-3"" style="width: 30%; background-color: #1D2C3B; border-radius: 50px;">
-        <img src="./assets/img/spiderman.jpg" class="mx-3 mt-3" alt="..." style="border-radius: 50px;">
-        <div class="card-body">
-          <h3 class="card-title">Amazing Spiderman</h3>
-          <div class="pb-2" >
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
-          </div>
-          <div class="text-center mt-3">
-            <button href="#" class="btn btn-primary px-5 py-3 " style="border-radius: 30px;">Cart 50,59€</button>
+      <div class="col-md-4 mb-3">
+        <div class="card" style=" background-color: #1D2C3B; border-radius: 50px;">
+          <img src="./assets/img/spiderman.jpg" class="mx-3 mt-3" alt="..." style="border-radius: 50px;">
+          <div class="card-body">
+            <h3 class="card-title">Amazing Spiderman</h3>
+            <div class="pb-2">
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
+            </div>
+            <div class="text-center mt-3">
+              <button href="#" class="btn btn-primary px-5 py-3 " style="border-radius: 30px;">Cart 50,59€</button>
+            </div>
           </div>
         </div>
       </div>
-
-      
+      <div class="col-md-4 mb-3">
+        <div class="card" style=" background-color: #1D2C3B; border-radius: 50px;">
+          <img src="./assets/img/spiderman.jpg" class="mx-3 mt-3" alt="..." style="border-radius: 50px;">
+          <div class="card-body">
+            <h3 class="card-title">Amazing Spiderman</h3>
+            <div class="pb-2">
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
+            </div>
+            <div class="text-center mt-3">
+              <button href="#" class="btn btn-primary px-5 py-3 " style="border-radius: 30px;">Cart 50,59€</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="row pt-5">
-
-      <div class="card mx-3" style="width: 30%; background-color: #1D2C3B; border-radius: 50px;">
-        <img src="./assets/img/spiderman.jpg" class="mx-3 mt-3" alt="..." style="border-radius: 50px;">
-        <div class="card-body">
-          <h3 class="card-title">Amazing Spiderman</h3>
-          <div class="pb-2" >
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
-          </div>
-          <div class="text-center mt-3">
-            <button href="#" class="btn btn-primary px-5 py-3 " style="border-radius: 30px;">Cart 50,59€</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="card mx-3"" style="width: 30%; background-color: #1D2C3B; border-radius: 50px;">
-        <img src="./assets/img/spiderman.jpg" class="mx-3 mt-3" alt="..." style="border-radius: 50px;">
-        <div class="card-body">
-          <h3 class="card-title">Amazing Spiderman</h3>
-          <div class="pb-2" >
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
-          </div>
-          <div class="text-center mt-3">
-            <button href="#" class="btn btn-primary px-5 py-3 " style="border-radius: 30px;">Cart 50,59€</button>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-3" style=" background-color: #1D2C3B; border-radius: 50px;">
+          <img src="./assets/img/spiderman.jpg" class="mx-3 mt-3" alt="..." style="border-radius: 50px;">
+          <div class="card-body">
+            <h3 class="card-title">Amazing Spiderman</h3>
+            <div class="pb-2">
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
+            </div>
+            <div class="text-center mt-3">
+              <button href="#" class="btn btn-primary px-5 py-3 " style="border-radius: 30px;">Cart 50,59€</button>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="card mx-3"" style="width: 30%; background-color: #1D2C3B; border-radius: 50px;">
-        <img src="./assets/img/spiderman.jpg" class="mx-3 mt-3" alt="..." style="border-radius: 50px;">
-        <div class="card-body">
-          <h3 class="card-title">Amazing Spiderman</h3>
-          <div class="pb-2" >
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
-          </div>
-          <div class="text-center mt-3">
-            <button href="#" class="btn btn-primary px-5 py-3 " style="border-radius: 30px;">Cart 50,59€</button>
+      <div class="col-md-4 mb-3">
+        <div class="card" style=" background-color: #1D2C3B; border-radius: 50px;">
+          <img src="./assets/img/spiderman.jpg" class="mx-3 mt-3" alt="..." style="border-radius: 50px;">
+          <div class="card-body">
+            <h3 class="card-title">Amazing Spiderman</h3>
+            <div class="pb-2">
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
+            </div>
+            <div class="text-center mt-3">
+              <button href="#" class="btn btn-primary px-5 py-3 " style="border-radius: 30px;">Cart 50,59€</button>
+            </div>
           </div>
         </div>
       </div>
-
-      
+      <div class="col-md-4 mb-3">
+        <div class="card" style=" background-color: #1D2C3B; border-radius: 50px;">
+          <img src="./assets/img/spiderman.jpg" class="mx-3 mt-3" alt="..." style="border-radius: 50px;">
+          <div class="card-body">
+            <h3 class="card-title">Amazing Spiderman</h3>
+            <div class="pb-2">
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
+            </div>
+            <div class="text-center mt-3">
+              <button href="#" class="btn btn-primary px-5 py-3 " style="border-radius: 30px;">Cart 50,59€</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="row pt-5">
-
-      <div class="card mx-3" style="width: 30%; background-color: #1D2C3B; border-radius: 50px;">
-        <img src="./assets/img/spiderman.jpg" class="mx-3 mt-3" alt="..." style="border-radius: 50px;">
-        <div class="card-body">
-          <h3 class="card-title">Amazing Spiderman</h3>
-          <div class="pb-2" >
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
-          </div>
-          <div class="text-center mt-3">
-            <button href="#" class="btn btn-primary px-5 py-3 " style="border-radius: 30px;">Cart 50,59€</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="card mx-3"" style="width: 30%; background-color: #1D2C3B; border-radius: 50px;">
-        <img src="./assets/img/spiderman.jpg" class="mx-3 mt-3" alt="..." style="border-radius: 50px;">
-        <div class="card-body">
-          <h3 class="card-title">Amazing Spiderman</h3>
-          <div class="pb-2" >
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
-          </div>
-          <div class="text-center mt-3">
-            <button href="#" class="btn btn-primary px-5 py-3 " style="border-radius: 30px;">Cart 50,59€</button>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-3" style=" background-color: #1D2C3B; border-radius: 50px;">
+          <img src="./assets/img/spiderman.jpg" class="mx-3 mt-3" alt="..." style="border-radius: 50px;">
+          <div class="card-body">
+            <h3 class="card-title">Amazing Spiderman</h3>
+            <div class="pb-2">
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
+            </div>
+            <div class="text-center mt-3">
+              <button href="#" class="btn btn-primary px-5 py-3 " style="border-radius: 30px;">Cart 50,59€</button>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="card mx-3"" style="width: 30%; background-color: #1D2C3B; border-radius: 50px;">
-        <img src="./assets/img/spiderman.jpg" class="mx-3 mt-3" alt="..." style="border-radius: 50px;">
-        <div class="card-body">
-          <h3 class="card-title">Amazing Spiderman</h3>
-          <div class="pb-2" >
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
-            <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
-          </div>
-          <div class="text-center mt-3">
-            <button href="#" class="btn btn-primary px-5 py-3 " style="border-radius: 30px;">Cart 50,59€</button>
+      <div class="col-md-4 mb-3">
+        <div class="card" style=" background-color: #1D2C3B; border-radius: 50px;">
+          <img src="./assets/img/spiderman.jpg" class="mx-3 mt-3" alt="..." style="border-radius: 50px;">
+          <div class="card-body">
+            <h3 class="card-title">Amazing Spiderman</h3>
+            <div class="pb-2">
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
+            </div>
+            <div class="text-center mt-3">
+              <button href="#" class="btn btn-primary px-5 py-3 " style="border-radius: 30px;">Cart 50,59€</button>
+            </div>
           </div>
         </div>
       </div>
-
-      
+      <div class="col-md-4 mb-3">
+        <div class="card" style=" background-color: #1D2C3B; border-radius: 50px;">
+          <img src="./assets/img/spiderman.jpg" class="mx-3 mt-3" alt="..." style="border-radius: 50px;">
+          <div class="card-body">
+            <h3 class="card-title">Amazing Spiderman</h3>
+            <div class="pb-2">
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
+              <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill me-2">Playstation</button>
+            </div>
+            <div class="text-center mt-3">
+              <button href="#" class="btn btn-primary px-5 py-3 " style="border-radius: 30px;">Cart 50,59€</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+
+
+
+
+
 
 
   </div>
