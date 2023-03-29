@@ -259,31 +259,9 @@
     color: white;
 }
 
-  .searchform a {
-  display: none;
-  position: absolute;
-  top: 70px;
-  bottom:0;
-  left: 0;
-  right: 0;
-  font-size: 20px;
-  color: white;
-  text-align: center; 
-  width: 100%;
-}
-  .searchform:valid a {
-  display: block;
-}
 
-#clear-btn{
-text-decoration: none;
-position: static;
-top: 0;
-}
-#clear-btn:hover{
-text-decoration: none;
-color: red;
-}
+
+
 
 .marginlogo{
   margin-left: 3vh;
