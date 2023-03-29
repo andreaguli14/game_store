@@ -15,4 +15,8 @@ Palette
 
 * card category background #1C2D3B
 
+<<<<<<< HEAD
 finished
+=======
+andrea modify
+>>>>>>> origin/Riccardo
