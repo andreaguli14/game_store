@@ -6,19 +6,20 @@
 
 
 body {
-   background-color: #0D171F;
+   background-color:#15202B ;
    color: #15202B;
 }
 
-/*.container {
+.container {
    
    display: flex;
+   justify-content: space-around;
    background-color: #0D171F;
    
-}*/
+}
 
 .home {
-   
+  
     background-color: #15202B;
 }
 
@@ -94,7 +95,7 @@ body {
     background-color: #1C2D3B;
     display: flex ;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 
     
  }
@@ -106,6 +107,7 @@ body {
     border-color: #1C2D3B;
     background-color: #1C2D3B;
     color: #1C2D3B;
+    
  }
 
  .btn-3 {
@@ -153,6 +155,7 @@ body {
    justify-content: space-between;
    align-items: center;
    justify-content: space-around;
+   justify-content: space-evenly;
    
    
 }
