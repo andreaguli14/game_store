@@ -9,12 +9,18 @@ MOCKUP
 
 Palette 
 
-* background #0D171F
-
 * add to cart button #5472F3
 
 * card background #15202B
 
 * card category background #1C2D3B
 
+<<<<<<< HEAD
 andrea modify
+=======
+<<<<<<< HEAD
+finished
+=======
+andrea modify
+>>>>>>> origin/Riccardo
+>>>>>>> main

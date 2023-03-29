@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Store</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: #0B171F">
+
+  <nav class="navbar fixed-top " style="padding: 0; ">
+    <div class="container-fluid">
+      <div class="text-center">
+        <a class="navbar-brand pb-4" href="#">
+          <img src="./assets/img/logo.png" width="80%" height="50%" class="marginlogo mt-3">
+        </a>
+      </div>
+      <div class="pb-2 offset-5" style="height: 20%;">
+        <form class="searchform" action="" onmouseleave="clearInput()">
+          <input type="search" required>
+          <i class="fa fa-search"></i>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="wrapper">
+    <div class="sidebar pt-2 d-flex flex-column justify-content-between" style="height: 75%;">
+      <ul class="d-flex flex-column" style="margin-left: 5px; padding-left: 0px ;">
+        <li>
+          <a class=" homehover" href="#">
+            <span data-content="Link Hover" aria-hidden="true"></span>
+            <span class="text">Home</span>
+            <span class="icon home""><i class=" fa-solid fa-house"></i></span>
+          </a>
+
+        </li>
+        <li>
+          <a class="newshover" href="#">
+            <span class="text">News</span>
+            <span class="icon news"><i class="fa-solid fa-newspaper"></i></i></span>
+          </a>
+        </li>
+        <li>
+          <a class="libraryhover" href="#">
+            <span class="text">Library</span>
+            <span class="icon library"><i class="fa-solid fa-book-bookmark"></i></i></span>
+          </a>
+        </li>
+        <li>
+          <a class="storehover" href="./Index.html">
+            <span class="text">Store</span>
+            <span class="icon store"><i class="fa-solid fa-cart-shopping"></i></span>
+          </a>
+        </li>
+      </ul>
+      <ul class="d-flex flex-column" style="margin-left: 5px; padding-left: 0px ;">
+        <li class="downsection"">
+          <hr class=" solid">
+          <a class="supporthover " href="#">
+            <span class="text">Support</span>
+            <span class="icon support"><i class="fa-solid fa-comments"></i></i></span>
+          </a>
+          <button class="menu hamburger opened"
+            onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+            aria-label="Main Menu">
+            <svg width="60" height="60" viewBox="0 0 100 50">
+              <path class="line line1"
+                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+              <path class="line line2" d="M 20,50 H 80" />
+              <path class="line line3"
+                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="content">
+    <header class="ms-5">
+      <h1>Hogwarts Legacy</h1>
+    </header>
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-lg-12 col-xl-8 pe-4">
+          <video width=100%" height=100%" autoplay muted style="border-radius:150px; ">
+            <source src="assets/img/Hogwarts Legacy - Official Accolades Trailer.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="col-lg-12 col-xl-4">
+          <div>
+
+            <div class="card mb-3 pb-2 mt-3"
+              style="width:100%; border-radius: 60px; background-color: #1D2C3B; color: white;">
+              <div class="card-body p-4 mt-2 d-flex flex-column justify-content-end">
+                <h1 class="card-title ms-3">Hogwarts Legacy</h1>
+                <p>
+                  Hogwarts Legacy is an immersive, open-world action RPG set in the world first introduced in the Harry
+                  Potter books. For the first time, experience Hogwarts in the 1800s. Your character is a student who
+                  holds
+                  the key to an ancient secret that threatens to tear the wizarding world apart.
+                </p>
+                <div class="my-3">
+                  <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
+                  <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
+                  <button type="button" class="btnminimg btn btn-dark btn-sm rounded-pill mx-2">Playstation</button>
+                </div>
+                <div class="text-center mt-2">
+                  <button href="#" class="btn btn-primary px-5 pt-3 " style="border-radius: 30px;">
+                    <h5><i class="fa-solid fa-cart-shopping"></i> 50,59€</h5>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-sm-12 col-12 col-md-12 col-lg-12 col-xl-12">
+              <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./assets/hogwarts-legacy-deluxe-edition-xbox-series-x-s-deluxe-edition-xbox-series-x-s-gioco-microsoft-store-wallpaper-2-thumbv2.jpg"
+                      class="d-block w-100" style="border-radius: 15%;" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/mago2.jpg" class="d-block w-100" style="border-radius: 15%;" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/mago3.jpg" class="d-block w-100" style="border-radius: 15%;" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="row p-5 ">
+        <h3>Informazioni tecniche</h3>
+        <p>
+          Il gioco è stato annunciato il 25 febbraio 2021 e sarà disponibile per:
+        </p>
+        <ul class="">
+          <li>PlayStation 5</li>
+          <li>PlayStation 4</li>
+          <li>Xbox Series X/S</li>
+          <li>Xbox One</li>
+          <li>PC</li>
+        </ul>
+        <p>
+          Il gioco è stato sviluppato da Avalanche Software
+          e pubblicato da Warner Bros. Interactive Entertainment. Il gioco è ambientato in un mondo aperto e sarà
+          disponibile in inglese,
+          francese, tedesco, spagnolo, italiano, portoghese, russo, giapponese, coreano, cinese tradizionale e
+          cinese
+          semplificato.
+
+        </p>
+        <h3>Trama</h3>
+        <p id="tra"> Hogwarts Legacy è un gioco di ruolo d'azione in cui i giocatori sono in grado di
+          partecipare alle
+          lezioni nella
+          scuola
+          di magia e stregoneria di Hogwarts.
+          I luoghi del franchise Wizarding World esplorabili comprendono la Foresta Proibita e Hogsmeade.
+        </p>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
