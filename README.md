@@ -9,7 +9,7 @@ MOCKUP
 
 Palette 
 
-* background 0D171F
+* background 
 
 * add to cart button 5472F3
 
